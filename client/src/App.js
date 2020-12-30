@@ -1,8 +1,8 @@
 import React from 'react';
 // import { ApolloClient } from '@apollo/client';
-import { ApolloProvider } from '@apollo/client';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
-
+import { ApolloProvider } from '@apollo/client';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Characters from './components/characters';
 import './App.css';
 
