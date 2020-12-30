@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Natha-Saray/Ravn-Challenge-V2-Nathalia#readme",
   "dependencies": {
+    "@apollo/client": "^3.3.6",
     "axios": "^0.21.1",
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
