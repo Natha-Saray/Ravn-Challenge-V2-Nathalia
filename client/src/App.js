@@ -18,10 +18,13 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Router>
     <div className="App">
       <h1>Ravn Star Wars Registry</h1>
       <Characters />
+      <Route exact path="/" component={Characters} />
     </div>
+    </Router>
     </ApolloProvider>
     
   );
