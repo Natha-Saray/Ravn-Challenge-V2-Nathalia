@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
-import { ApolloClient } from '@apollo/client';
+import React from 'react';
+// import { ApolloClient } from '@apollo/client';
 import { ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
 import Characters from './components/characters';
 import './App.css';
 
-const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql'
-});
+// const client = new ApolloClient({
+//   uri: 'http://localhost:5000/graphql'
+// });
 
+const client = new ApolloClient({
+  uri: 'http://localhost:5000/graphql',
+  cache: new InMemoryCache()
+});
 
 function App() {
   return (
