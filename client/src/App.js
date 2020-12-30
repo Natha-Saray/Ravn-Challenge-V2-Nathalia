@@ -9,9 +9,11 @@ const client = new ApolloClient({
 
 function App() {
   return (
+    <ApolloProvider client={client}>
     <div className="App">
       <h1>Ravn Star Wars Registry</h1>
     </div>
+    </ApolloProvider>
   );
 }
 
