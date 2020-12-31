@@ -1,8 +1,4 @@
 import React, { Component, Fragment } from 'react';
-// import { gql } from 'apollo-boost';
-// import { gql, useQuery } from '@apollo/client';
-// import { useQuery, gql } from '@apollo/client';
-// import { useQuery, ApolloConsumer } from '@apollo/client';
 import gql from 'graphql-tag';
 import { Query } from '@apollo/client';
 import characterItem from './characterItem';
